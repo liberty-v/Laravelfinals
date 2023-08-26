@@ -62,7 +62,7 @@
 * and save it
 * next, open your preferred browser (I recommend Microsoft Edge)
 * type in the address bar ("localhost/phpmyadmin") (discard the "") and enter
-* import the laravelfinals database
+* import the laravelfinals.sql database
 * open bash terminal inside the VSC and type 
 ***
  npm run dev
