@@ -9,14 +9,32 @@
 * add the following code in the very bottom:
 ***
  <VirtualHost *:80>
+
+ 
+ 
    DocumentRoot "C:/xampp/htdocs"
+
+   
+   
   ServerName localhost
+
+  
  </VirtualHost>
 
+ 
+
  <VirtualHost *:80>
+
+ 
    DocumentRoot "C:/xampp/htdocs/laravelfinals/public"
+
+   
    ServerName laravelfinals.local
+
+   
  </VirtualHost>
+
+ 
 ***
  * then save it
  * next, open notepad (run as admin)
@@ -26,6 +44,8 @@
 * add the following code to the bottom:
 ***
  127.0.0.1 localhost
+
+ 
  127.0.0.1 laravelfinals.local
 ***
  * save
@@ -33,8 +53,8 @@
 * open VSC then open the laravelfinals folder
 * let us set up the database by first going to the .env
 * set the DB_DATABASE into "laravelfinals"
-* set the DB_USERAME into "<your db username>"
-* set the DB_PASSWORD into "<your db password>"
+* set the DB_USERAME into "your db username"
+* set the DB_PASSWORD into "your db password"
 * and save it
 * next, open your preferred browser (I recommend Microsoft Edge)
 * type in the address bar ("localhost/phpmyadmin") (discard the "") and enter
@@ -55,9 +75,11 @@
 * After using the project, we will just kindly logout out of the project by going to "Your Name" or where the "login" & "Register" button was placed on the navbar, and press logout.
 
  
-
+***
  Thank you for using the Emro's Boarding House Laravel Web Application! 
 ***
+
+
  (Message from the developer :
 >  "The project is not perfect and made waaay late, the front-end is a little messy but readable, but its always not all about the appearance right? I mostly prioritized the project's back-end functionality, so it works. This project is also not easy to work on when you do not have any group or person to rely on. Yes, I only did this solo, it was hard and I made a lot of mistakes, lost motivation and somewhat despise doing back-end because that is where most error appears but finishing the "beta" version of this project and I can proudly say I did love coding [both front-end and back-end but mostly back-end now] and understand more about back-end programming and LARAVEL <3 Thank you!.
                                                                                         -Liberty Vasquez (BSIT student)
