@@ -1,66 +1,67 @@
-<p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+##laravelfinals (Emro's Boarding House)
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p>
+link: laravelfinals.local
 
-## About Laravel
 
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
+Instructions to run the project:
+> open virtual post by going to C:\xampp\apache\conf\extra
+> open vhost.conf (you can open it with Visual Studio Code or VSC)
+> add the following code in the very bottom:
 
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting).
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs"
+    ServerName localhost
+</VirtualHost>
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+<VirtualHost *:80>
+    DocumentRoot "C:/xampp/htdocs/laravelfinals/public"
+    ServerName laravelfinals.local
+</VirtualHost>
 
-## Learning Laravel
+> then save it
+> next, open notepad (run as admin)
+> go to C:\Windows\System32\drivers\etc
+> change format to "All files(".")
+> open hosts
+> add the following code to the bottom:
 
-Laravel has the most extensive and thorough [documentation](https://laravel.com/docs) and video tutorial library of all modern web application frameworks, making it a breeze to get started with the framework.
+127.0.0.1 localhost
+127.0.0.1 laravelfinals.local
 
-You may also try the [Laravel Bootcamp](https://bootcamp.laravel.com), where you will be guided through building a modern Laravel application from scratch.
+> save
+> open xampp control panel and restart Apache
+> open VSC then open the laravelfinals folder
+> let us set up the database by first going to the .env
+> set the DB_DATABASE into "laravelfinals"
+> set the DB_USERAME into "<your db username>"
+> set the DB_PASSWORD into "<your db password>"
+> and save it
+> next, open your preferred browser (I recommend Microsoft Edge)
+> type in the address bar ("localhost/phpmyadmin") (discard the "") and enter
+> import the laravelfinals database
+> open bash terminal inside the VSC and type 
 
-If you don't feel like reading, [Laracasts](https://laracasts.com) can help. Laracasts contains over 2000 video tutorials on a range of topics including Laravel, modern PHP, unit testing, and JavaScript. Boost your skills by digging into our comprehensive video library.
+npm run dev
 
-## Laravel Sponsors
+> and press enter
+> then open your preferred browser (I recommend Microsoft Edge)
+> type in the address bar (laravelfinals.local) and enter it
+> First you will need to login to gain access interaction to the project, and if you are new, you can freely register by pressing the register button at either in the nav bar or in the middle of the page
+> after registering, you will proceed to the dashboard, where you can edit/delete a boarder but we cannot view it, we can just identify who created the boarder (we will not touch anything in the dashboard)
+> we will proceed to the boarders by clicking the "boarders" button in the middle of the navbar, the boarder interface is where we can create/add, update , view, and delete. There is also a bills, and room button.
+> we can proceed to the bills button where the Room, Month of Bill and status of the boarder will be displayed, we can also add, update and delete a bill. To view more details about the payments, you can click the "details" button to view more about the bills of the boarder/s.
+> we can proceed to the "Room" button where we can view the details, information and status of each room, whether it could be available, occupied or under maintenance.
+> [optional] We can check the "about" button. It is the information made by the creator and sole developer of the project.
+> After using the project, we will just kindly logout out of the project by going to "Your Name" or where the "login" & "Register" button was placed on the navbar, and press logout.
+>
+> 
+>
+> Thank you for using the Emro's Boarding House Laravel Web Application!
+>
+> (Message from the developer :
+>  "The project is not perfect, the front-end is a little messy but readable, but its always not all about the appearance right? I mostly prioritized the project's back-end functionality, so it works. This project is also not easy to work on when you do not have any group or person to rely on. Yes, I only did this solo, it was hard and I made a lot of mistakes, lost motivation and somewhat despise doing back-end because that is where most error appears but finishing the "beta" version of this project and I can proudly say I did love coding [both front-end and back-end but mostly back-end now] and understand more about back-end programming and LARAVEL <3 Thank you!.
+                                                                                        -Liberty Vasquez (BSIT student)
+> ) 
 
-We would like to extend our thanks to the following sponsors for funding Laravel development. If you are interested in becoming a sponsor, please visit the Laravel [Patreon page](https://patreon.com/taylorotwell).
 
-### Premium Partners
 
-- **[Vehikl](https://vehikl.com/)**
-- **[Tighten Co.](https://tighten.co)**
-- **[Kirschbaum Development Group](https://kirschbaumdevelopment.com)**
-- **[64 Robots](https://64robots.com)**
-- **[Cubet Techno Labs](https://cubettech.com)**
-- **[Cyber-Duck](https://cyber-duck.co.uk)**
-- **[Many](https://www.many.co.uk)**
-- **[Webdock, Fast VPS Hosting](https://www.webdock.io/en)**
-- **[DevSquad](https://devsquad.com)**
-- **[Curotec](https://www.curotec.com/services/technologies/laravel/)**
-- **[OP.GG](https://op.gg)**
-- **[WebReinvent](https://webreinvent.com/?utm_source=laravel&utm_medium=github&utm_campaign=patreon-sponsors)**
-- **[Lendio](https://lendio.com)**
-
-## Contributing
-
-Thank you for considering contributing to the Laravel framework! The contribution guide can be found in the [Laravel documentation](https://laravel.com/docs/contributions).
-
-## Code of Conduct
-
-In order to ensure that the Laravel community is welcoming to all, please review and abide by the [Code of Conduct](https://laravel.com/docs/contributions#code-of-conduct).
-
-## Security Vulnerabilities
-
-If you discover a security vulnerability within Laravel, please send an e-mail to Taylor Otwell via [taylor@laravel.com](mailto:taylor@laravel.com). All security vulnerabilities will be promptly addressed.
-
-## License
-
-The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
