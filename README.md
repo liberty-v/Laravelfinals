@@ -19,7 +19,7 @@
   ServerName localhost
 
   
- </VirtualHost>
+( </VirtualHost>)    > note: remove the ()
 
  
 
@@ -32,7 +32,7 @@
    ServerName laravelfinals.local
 
    
- </VirtualHost>
+( </VirtualHost>)   > note: remove the ()
 
  
 ***
