@@ -1,0 +1,41 @@
+.jumbotron{
+    background-color: rgb(255, 255, 255);
+    
+}
+
+.place{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+   // height: 10px;
+}
+
+.common{
+    background-color: rgb(255, 255, 255);
+    display:block;
+    text-align: left;
+    margin-right:160px;
+    margin-left:160px;
+}
+
+#bold{
+    font-weight: bold;
+}
+
+.button{
+    text-decoration: none;
+}
+
+#foot{
+    position:fixed;
+    bottom:0px;
+    margin: auto;
+    
+    right:400px;
+    left:400px;
+    padding: 2%;
+}
+
+
+
